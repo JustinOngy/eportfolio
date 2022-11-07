@@ -15,14 +15,20 @@
     emailjs.init("2M0vZixu046-9bu7_");
     })();
     </script>
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 
 <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
-            <figure>
+            <!-- <figure>
                 <img id="personal-logo" src="./assets/logo.png" alt="">
-            </figure>
+            </figure> -->
+            <div id="personal-logo">
+<span class="name-logo">Justin Ong</span>
+            </div>
+            
             <ul class="nav__link--list">
                 <li class="nav__link" onclick="toggleModal()">
                     <a href="#" class="
@@ -55,16 +61,16 @@
             </ul>
         </nav>
         <header class="header">
-            <div class="header__content">
-                <h1 class="title">Hey</h1>
-                <h1 class="title title-secondary"> I'm <span class="green">Justin.</span></h1>
-                <p class="header__para">
+            <div class="header__content"  >
+                <h1 class="title" data-aos="fade-up" data-aos-duration="1000">Hey</h1>
+                <h1 class="title title-secondary" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"> I'm <span class="green">Justin.</span></h1>
+                <p class="header__para" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1100">
                 <b>I'm a <span class="green">Frontend Software Engineer</span> with a strong passion for
                     creating beautiful web applications with customisable and responsive user experiences. Here to solve problems!</b>
                     <br>
                     More <b class="green click" onclick="toggleModal()">about me</b>
                 </p>
-                <div class="social__list">
+                <div class="social__list" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1100" data-aos-once="true" >
                     <!-- add own linkedin -->
                     <a class="social__link click" href="https://www.linkedin.com/in/justinongprofile/" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
@@ -156,14 +162,119 @@
     <img src="./assets/webcloud.png" class="shape shape--7">
     <img src="./assets/codeshape.png" class="shape shape--8">
     </section>
+
+
+<section id="card-feature">
+    <div class="card-swiper">
+    <div class="card-groups">
+    <div class="card-group" data-index="0" data-status="active">
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+      </div>
+      <div class="card-group" data-index="1" data-status="unknown">
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+      </div>
+      <div class="card-group" data-index="2" data-status="unknown">
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+        <div class="small-card card"></div>
+        <div class="big-card card"></div>
+      </div>
+      <div class="card-swiper__buttons" >
+          <button id="hate-button">
+              <i class="fas fa-times"></i></button>
+          <button id="love-button">
+              <i class="fas fa-heart"></i></button>
+      </div>
+    </div>
+</div>
+</section>
+<section id="languages">
+    <div class="container">
+        <div class="row">
+            <h1 class="section__title" data-aos="fade" data-aos-delay="150" data-aos-duration="1500" data-aos-once="true">This is my <strong class="green"> technology stack</strong></h1>
+            <div class="language__list">
+                <div class="language" data-aos="fade-right" data-aos-delay="350" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/html.logo.png" alt="">
+                    </figure>
+                    <span class="language__name">HTML</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="550" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/css.logo.png" alt="">
+                    </figure>
+                    <span class="language__name">CSS</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="750" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/Javascript.logo.png" alt="">
+                    </figure>
+                    <span class="language__name">Javascript</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="950" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/react.logo.png" alt="">
+                    </figure>
+                    <span class="language__name">React</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
     <section id="projects">
         <div class="container">
             <div class="row">
-                <h1 class="section__title">
+                <h1 class="section__title" data-aos="fade" data-aos-delay="150" data-aos-duration="1500" data-aos-once="true">
                     Here are some of my <span class="green">projects</span>
                 </h1>
                 <ul class="project__list">
-                    <li class="project">
+                    <li class="project" data-aos="fade-up-right" data-aos-delay="450" data-aos-duration="1200" data-aos-once="true">
+                        <div class="project__wrapper">
+                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Magic Books - E-commerce Store
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    HTML, CSS, JAVASCRIPT, VUE, VUEX
+                                </h4>
+                                <p class="project__description--para">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deleniti delectus hic,
+                                    quia aliquid excepturi temporibus labore! Eaque quibusdam cupiditate accusamus
+                                    inventore recusandae sapiente aspernatur fugit, numquam, dicta non dolorum.
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="#" class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="#" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project" data-aos="fade-down-left" data-aos-delay="150" data-aos-duration="1200" data-aos-once="true">
                         <div class="project__wrapper">
                             <img src="./assets/blinker mockup.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
@@ -190,34 +301,7 @@
                             </div>
                         </div>
                     </li>
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales Projects
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JAVASCRIPT, VUE, VUEX
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deleniti delectus hic,
-                                    quia aliquid excepturi temporibus labore! Eaque quibusdam cupiditate accusamus
-                                    inventore recusandae sapiente aspernatur fugit, numquam, dicta non dolorum.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="#" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project">
+                    <li class="project" data-aos="fade-up-left" data-aos-delay="150" data-aos-duration="1200" data-aos-once="true">
                         <div class="project__wrapper">
                             <img src="./assets/blinker mockup.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
@@ -291,6 +375,10 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+           AOS.init();
+        </script>
 </body>
 
 </html>
