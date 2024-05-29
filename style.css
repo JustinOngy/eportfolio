@@ -511,11 +511,16 @@ nav {
 }
 
 .modal__overlay--success {
-  background-color: #44d62c;
-  font-size: 40px;
+  background-color: #2990f1;
+  color: white;
   font-weight: 700;
   text-align: center;
-  padding: 28px;
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  padding: 40px;
+  z-index: 10;
 }
 
 .modal__overlay--visible {
@@ -648,16 +653,6 @@ nav {
   overflow: hidden;
   background-color: #eaeaea;
 }
-/* 
-.project__wrapper:hover .project__description {
-  opacity: 1;
-  transform: translateY(-50%);
-}
-
-.project__wrapper:hover .project__img {
-  transform: scale(1.07);
-  filter: blur(5px);
-} */
 
 .link-icon {
   color: #2c46d6;
