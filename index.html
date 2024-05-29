@@ -15,18 +15,21 @@
     emailjs.init("2M0vZixu046-9bu7_");
     })();
     </script>
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 </head>
 
 <body>
     <section id="landing-page" onmousemove="moveBackground(event)">
         <nav>
-            <!-- <figure>
-                <img id="personal-logo" src="./assets/logo.png" alt="">
-            </figure> -->
+           
             <div id="personal-logo">
-<span class="name-logo">Justin Ong</span>
+<span class="name-logo">Justin.Dev</span>
             </div>
             
             <ul class="nav__link--list">
@@ -62,24 +65,22 @@
         </nav>
         <header class="header">
             <div class="header__content"  >
-                <h1 class="title" data-aos="fade-up" data-aos-duration="1000">Hey</h1>
-                <h1 class="title title-secondary" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"> I'm <span class="green">Justin.</span></h1>
+                <h1 class="title-0" data-aos="fade-up" data-aos-duration="1000">Hey,</h1>
+                <h1 class="title title-secondary" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000"> I'm Justin</h1>
+                <h1 class="title-2" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1100"><span class="blue">A Software Engineer</span></h1>
+                
                 <p class="header__para" data-aos="fade-up" data-aos-delay="150" data-aos-duration="1100">
-                <b>I'm a <span class="green">Frontend Software Engineer</span> with a strong passion for
-                    creating beautiful web applications with customisable and responsive user experiences. Here to solve problems!</b>
+                <b>Currently based in Sydney, Australia.</b>
                     <br>
-                    More <b class="green click" onclick="toggleModal()">about me</b>
+                    More <b class="blue click" onclick="toggleModal()">about me</b>
                 </p>
                 <div class="social__list" data-aos="fade-up" data-aos-delay="350" data-aos-duration="1100" data-aos-once="true" >
-                    <!-- add own linkedin -->
-                    <a class="social__link click" href="https://www.linkedin.com/in/justinongprofile/" target="_blank">
+                    <a class="social__link click" href="https://www.linkedin.com/in/-justinong/" target="_blank">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <!-- add own github -->
-                    <a class="social__link click" href="https://google.com" target="_blank">
+                    <a class="social__link click" href="https://github.com/JustinOngy" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
-                    <!-- add own resume -->
                     <a class="social__link click" href="./assets/Justin Resume 2022.docx" target="_blank">
                         <i class="fas fa-file-pdf"></i>
                     </a>
@@ -96,15 +97,18 @@
         </a>
         <div class="modal">
             <div class="modal__half modal__about">
+                <figure class="about-me__picture--mask">
+                    <img src="./assets/me.jpg" class="about-me__picture" alt="Picture of Me">
+                </figure>
                 <h3 class="modal__title modal__title--about">A little about me.</h3>
-                <h4 class="modal__sub-title modal__sub-title--about">Justin Ong - Frontend Software Engineer.</h4>
-                <p class="modal__para">I'm a 21 year old <b class="green">frontend software engineer</b> based in Sydney, Australia with
-                    a strong passion for developing websites with <b class="green">purposeful user experiences</b>.
+                <h4 class="modal__sub-title modal__sub-title--about">Justin Ong - Software Engineer.</h4>
+                <p class="modal__para">I'm a  <b class="blue">software engineer</b> based in Sydney, Australia with
+                    a strong passion for developing applications with <b class="blue">purposeful user experiences</b>.
                     <br>
                     I work on new projects that take my engineering skills to new levels and find ways around problems in order 
                     to become a better developer overtime. 
                     <br>
-                    Currently, I am a <b class="green">freelance</b> frontend developer.
+                    Currently, I am a <b class="blue">freelance</b> developer.
                 </p>
                 <div class="modal__languages">
                     <figure class="modal__language">
@@ -121,6 +125,18 @@
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src="./assets/react.logo.png" alt="">
+                        <span class="language__name">React</span>
+                    </figure><figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/next.png" alt="">
+                        <span class="language__name">Nextjs</span>
+                    </figure><figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/ts.png" alt="">
+                        <span class="language__name">React</span>
+                    </figure><figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/git.png" alt="">
+                        <span class="language__name">React</span>
+                    </figure><figure class="modal__language">
+                        <img class="modal__language--img" src="./assets/" alt="">
                         <span class="language__name">React</span>
                     </figure>
                 </div>
@@ -152,90 +168,100 @@
                 </div>
             </div>
         </div>
-    <img src="./assets/codeshape.png" class="shape shape--0">
-    <img src="./assets/webcloud.png" class="shape shape--1">
-    <img src="./assets/monitor.png" class="shape shape--2">
-    <img src="./assets/cross.png" class="shape shape--3">
-    <img src="./assets/Rombus.png" class="shape shape--4">
-    <img src="./assets/cross.png" class="shape shape--5">
-    <img src="./assets/monitor.png" class="shape shape--6">
-    <img src="./assets/webcloud.png" class="shape shape--7">
-    <img src="./assets/codeshape.png" class="shape shape--8">
+
+        <img src="./assets/circle.png" class="circle shape shape--0"></img src="./assets/circle.png">
+        <img src="./assets/square.png" class="square shape shape--1"></img src="./assets/circle.png">
+        <img src="./assets/triangle.svg" class="triangle shape shape--2"></img src="./assets/circle.png">
+        <img src="./assets/circle.png" class="circle shape shape--4"></img src="./assets/circle.png">
+        <img src="./assets/square.png" class="square shape shape--5"></img src="./assets/circle.png">
+        <img src="./assets/triangle.svg" class="triangle shape shape--6"></img src="./assets/circle.png">
+        <img src="./assets/circle.png" class="circle shape shape--7"></img src="./assets/circle.png">
+        <img src="./assets/square.png" class="square shape shape--8"></img src="./assets/circle.png">
+
     </section>
 
 
-<section id="card-feature">
-    <div class="card-swiper">
-    <div class="card-groups">
-    <div class="card-group" data-index="0" data-status="active">
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-      </div>
-      <div class="card-group" data-index="1" data-status="unknown">
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-      </div>
-      <div class="card-group" data-index="2" data-status="unknown">
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-        <div class="small-card card"></div>
-        <div class="big-card card"></div>
-      </div>
-      <div class="card-swiper__buttons" >
-          <button id="hate-button">
-              <i class="fas fa-times"></i></button>
-          <button id="love-button">
-              <i class="fas fa-heart"></i></button>
-      </div>
-    </div>
-</div>
-</section>
+
 <section id="languages">
     <div class="container">
         <div class="row">
-            <h1 class="section__title" data-aos="fade" data-aos-delay="150" data-aos-duration="1500" data-aos-once="true">This is my <strong class="green"> technology stack</strong></h1>
+            <h1 class="section__title" data-aos="fade" data-aos-delay="150" data-aos-duration="1500" data-aos-once="true">This is my <strong class="blue"> technology stack</strong></h1>
             <div class="language__list">
+                <div class="language" data-aos="fade-right" data-aos-delay="750" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/Javascript.logo.png" alt="JavaScript">
+                    </figure>
+                    <span class="language__name">JavaScript</span>
+                </div>
                 <div class="language" data-aos="fade-right" data-aos-delay="350" data-aos-duration="1500" data-aos-once="true">
                     <figure class="language__img--wrapper">
-                        <img class="language__img" src="./assets/html.logo.png" alt="">
+                        <img class="language__img" src="./assets/html.logo.png" alt="HTML">
                     </figure>
                     <span class="language__name">HTML</span>
                 </div>
                 <div class="language" data-aos="fade-right" data-aos-delay="550" data-aos-duration="1500" data-aos-once="true">
                     <figure class="language__img--wrapper">
-                        <img class="language__img" src="./assets/css.logo.png" alt="">
+                        <img class="language__img" src="./assets/css.logo.png" alt="CSS">
                     </figure>
                     <span class="language__name">CSS</span>
                 </div>
-                <div class="language" data-aos="fade-right" data-aos-delay="750" data-aos-duration="1500" data-aos-once="true">
-                    <figure class="language__img--wrapper">
-                        <img class="language__img" src="./assets/Javascript.logo.png" alt="">
-                    </figure>
-                    <span class="language__name">Javascript</span>
-                </div>
                 <div class="language" data-aos="fade-right" data-aos-delay="950" data-aos-duration="1500" data-aos-once="true">
                     <figure class="language__img--wrapper">
-                        <img class="language__img" src="./assets/react.logo.png" alt="">
+                        <img class="language__img" src="./assets/react.logo.png" alt="React">
                     </figure>
                     <span class="language__name">React</span>
                 </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="2550" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/next.png" alt="Next.js">
+                    </figure>
+                    <span class="language__name">Next.js</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="1950" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/node.png" alt="Node.js">
+                    </figure>
+                    <span class="language__name">Node.js</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="1350" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/git.png" alt="Git">
+                    </figure>
+                    <span class="language__name">Git</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="1550" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/mongo.png" alt="MongoDB">
+                    </figure>
+                    <span class="language__name">MongoDB</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="2350" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/ex.webp" alt="Express">
+                    </figure>
+                    <span class="language__name">Express</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="1150" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/ts.png" alt="TypeScript">
+                    </figure>
+                    <span class="language__name">TypeScript</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="2150" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/tailwind.svg" alt="Tailwind CSS">
+                    </figure>
+                    <span class="language__name">Tailwind CSS</span>
+                </div>
+                <div class="language" data-aos="fade-right" data-aos-delay="1750" data-aos-duration="1500" data-aos-once="true">
+                    <figure class="language__img--wrapper">
+                        <img class="language__img" src="./assets/postgresql.svg" alt="PostgreSQL">
+                    </figure>
+                    <span class="language__name">PostgreSQL</span>
+                </div>
+             
             </div>
+            
         </div>
     </div>
 </section>
@@ -244,91 +270,69 @@
         <div class="container">
             <div class="row">
                 <h1 class="section__title" data-aos="fade" data-aos-delay="150" data-aos-duration="1500" data-aos-once="true">
-                    Here are some of my <span class="green">projects</span>
+                     <span class="blue">Projects</span>
                 </h1>
-                <ul class="project__list">
-                    <li class="project" data-aos="fade-up-right" data-aos-delay="450" data-aos-duration="1200" data-aos-once="true">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Magic Books - E-commerce Store
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JAVASCRIPT, VUE, VUEX
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deleniti delectus hic,
-                                    quia aliquid excepturi temporibus labore! Eaque quibusdam cupiditate accusamus
-                                    inventore recusandae sapiente aspernatur fugit, numquam, dicta non dolorum.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="#" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project" data-aos="fade-down-left" data-aos-delay="150" data-aos-duration="1200" data-aos-once="true">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales Projects
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JAVASCRIPT, VUE, VUEX
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deleniti delectus hic,
-                                    quia aliquid excepturi temporibus labore! Eaque quibusdam cupiditate accusamus
-                                    inventore recusandae sapiente aspernatur fugit, numquam, dicta non dolorum.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="#" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="project" data-aos="fade-up-left" data-aos-delay="150" data-aos-duration="1200" data-aos-once="true">
-                        <div class="project__wrapper">
-                            <img src="./assets/blinker mockup.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project__description--title">
-                                    Car Sales Projects
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    HTML, CSS, JAVASCRIPT, VUE, VUEX
-                                </h4>
-                                <p class="project__description--para">
-                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab deleniti delectus hic,
-                                    quia aliquid excepturi temporibus labore! Eaque quibusdam cupiditate accusamus
-                                    inventore recusandae sapiente aspernatur fugit, numquam, dicta non dolorum.
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="#" class="project__description--link">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                    <a href="#" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
+
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="project__wrapper">                      
+                        <h3 class="project__description--title">NFT Marketplace - Ultraverse NFT World</h3>
+
+                    <img src="./assets/nft.png" class="project__img" alt="">
+                        <h4 class="project__description--sub-title">HTML, CSS, JAVASCRIPT, VUE, VUEX</h4>
+                        <p class="project__description--para">My internship project at Frontend Simplified. This project features API fetching using axios, skeleton loading states using hooks, card carousels, reusable and dynamic components, filtering values, animations, load more features</p>
+                        <div class="project__description--links">
+                            <a href="https://github.com/JustinOngy/justin-marketplace-internship" class="project__description--link" target="_blank">
+                                <i class="fab fa-github link-icon"></i>
+                            </a>
+                            <a href="https://justin-marketplace-internship.vercel.app/" class="project__description--link" target="_blank">
+                                <i class="fas fa-link link-icon"></i>
+                            </a>
+                        </div>                 
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="project__wrapper">                      
+                        <h3 class="project__description--title">NFT Marketplace - Ultraverse NFT World</h3>
+
+                    <img src="./assets/nft.png" class="project__img" alt="">
+                        <h4 class="project__description--sub-title">HTML, CSS, JAVASCRIPT, VUE, VUEX</h4>
+                        <p class="project__description--para">My internship project at Frontend Simplified. This project features API fetching using axios, skeleton loading states using hooks, card carousels, reusable and dynamic components, filtering values, animations, load more features</p>
+                        <div class="project__description--links">
+                            <a href="https://github.com/JustinOngy/justin-marketplace-internship" class="project__description--link" target="_blank">
+                                <i class="fab fa-github link-icon"></i>
+                            </a>
+                            <a href="https://justin-marketplace-internship.vercel.app/" class="project__description--link" target="_blank">
+                                <i class="fas fa-link link-icon"></i>
+                            </a>
+                        </div>                 
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="project__wrapper">                      
+                        <h3 class="project__description--title">NFT Marketplace - Ultraverse NFT World</h3>
+
+                    <img src="./assets/nft.png" class="project__img" alt="">
+                        <h4 class="project__description--sub-title">HTML, CSS, JAVASCRIPT, VUE, VUEX</h4>
+                        <p class="project__description--para">My internship project at Frontend Simplified. This project features API fetching using axios, skeleton loading states using hooks, card carousels, reusable and dynamic components, filtering values, animations, load more features</p>
+                        <div class="project__description--links">
+                            <a href="https://github.com/JustinOngy/justin-marketplace-internship" class="project__description--link" target="_blank">
+                                <i class="fab fa-github link-icon"></i>
+                            </a>
+                            <a href="https://justin-marketplace-internship.vercel.app/" class="project__description--link" target="_blank">
+                                <i class="fas fa-link link-icon"></i>
+                            </a>
+                        </div>                 
+                </div>
+            </div>
+            
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-scrollbar"></div>
+    </div>
 
             </div>
         </div>
@@ -337,18 +341,16 @@
         <div class="container">
             <div class="row footer__row">
 
-                <figure>
-                    <img class="footer__logo--img" src="./assets/logo.svg" alt="">
-                </figure>
+                
                 <div class="footer__social--list">
-                    <a href="#" class="
+                    <a href="https://github.com/JustinOngy" class="
                 footer__social--link 
                 link__hover-effect 
                 link__hover-effect--white
                 ">
                         Github
                     </a>
-                    <a href="#" class="
+                    <a href="https://www.linkedin.com/in/-justinong/" class="
                 footer__social--link 
                 link__hover-effect 
                 link__hover-effect--white
@@ -362,8 +364,7 @@
                 ">
                         Contact
                     </a>
-                    <!-- PUT IN RESUME -->
-                    <a href="./assets/Justin Resume 2022.docx" target="_black" class="
+                    <a href="./assets/Justin Resume 2023.docx" target="_black" class="
                 footer__social--link 
                 link__hover-effect 
                 link__hover-effect--white
